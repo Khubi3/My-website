@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        background-color: rgb(0, 0, 83);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 65px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(59, 255, 255);
+      }
+      nav ul li a:hover {
+        color: white;
+        text-decoration: underline;
+        font-size: 1.02rem;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .Firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 23px 0px;
+      }
+      .Firstsection > div {
+        width: 33%;
+        margin: 80px 0px;
+      }
+      .leftSection {
+        font-size: 3rem;
+        margin: 30px 0px;
+      }
+
+      img {
+        height: 540px;
+        margin: -110px 0px;
+      }
+      .purple {
+        color: rgb(196, 0, 196);
+      }
+      #element {
+        color: rgb(102, 95, 167);
+      }
+      main hr {
+        border: 0;
+        height: 1px;
+        margin: 50px 80px;
+        background: #3158b4;
+      }
+      .secondsection {
+        margin: auto;
+        max-width: 80vw;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 2rem;
+      }
+      .text-gray {
+        color: gray;
+        margin: auto;
+        max-width: 80vw;
+        height: 80vh;
+      }
+      .secondsection .box {
+        display: flex;
+        justify-content: center;
+        background: white;
+        width: 82vw;
+        height: 2px;
+        margin: 10px 0px;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: beige;
+        margin: 0px 100px;
+      }
+      .img1{
+        height: 50px;
+        margin: 3px;
+      }
+      .img2{
+        height: 50px;
+        margin: 1px;
+      }
+      .img3{
+        height: 50px;
+        margin: 4px;
+      }
+      .vertical-text{
+        margin-left: 10px;
+      }
+      .vertical-text2{
+        margin-left: 10px;
+      }
+      .vertical-text3{
+        margin-left: 10px;
+      }
+      footer{
+        background: #00025f;
+        height: 232px;
+      }
+      .footer{
+        color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .copyright{
+        margin: 23px 0px;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Khubaib's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="Firstsection">
+        <div class="leftSection">
+          Hey, my name is <span class="purple">Khubaib</span> and
+          <div>I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="img1" src="bg1.png" />
+            <div class="vertical-text">HTML developer</div>
+          </div>
+          <div class="vertical">
+            <img class="img2" src="bg2 removed bg.png" />
+            <div class="vertical-text2">CSS developer</div>
+          </div>
+          <div class="vertical">
+            <img class="img3" src="bg3 removed bg.png" />
+            <div class="vertical-text3">JavaScript developer</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer">
+           <div class="port"> Khubaib's Portfolio</div>
+           <br>
+         <div class="copyright"> All rights are reserved|&copy;</div>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [" Web developer", "Web designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
